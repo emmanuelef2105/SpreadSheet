@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Datos de la tabla
+    body 
+        div
+            ul
+                each registro, index in registros 
+                    li #{registro.datos}
+                hr
+                p 
+                    a(href="/form") Ingresar Nuevo datos
