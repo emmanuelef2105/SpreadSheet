@@ -9,13 +9,12 @@ async function accederGoogleSheet(){
     await documento.useServiceAccountAuth(credenciales);
     await documento.loadInfo();
     
-    const sheet = documento.sheetsByIndex[0];
-    const registros = await sheet.getRows();
+   const sheet = documento.sheetsByIndex[0];
+const registros = await sheet.getRows();
     
 
     return registros;
 }
-
 
 async function guardarDatos(pObjecto){
     const documento = new GoogleSpreadsheet(googleId);
@@ -28,7 +27,7 @@ async function guardarDatos(pObjecto){
 }
 
 
-module.export = {
+module.exports = {
     accederGoogleSheet: accederGoogleSheet,
-    guardarDatos: guardarDatos,
+    guardarDatos: guardarDatos
 }

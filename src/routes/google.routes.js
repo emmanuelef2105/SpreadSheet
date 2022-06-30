@@ -8,7 +8,7 @@ const {
 } = require('../controllers/google.controller');
 
 router.get('/', obtenerDatos);
-router.get('/', pintarForm);
-router.post('/', guardarDatos);
+router.get('/form', pintarForm);
+router.post('/form', guardarDatos);
 
 module.exports = router;

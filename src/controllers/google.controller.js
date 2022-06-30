@@ -1,3 +1,4 @@
+
 let googleSheet = require('../spreadsheet');
 
 const obtenerDatos = async (req, res) => {
@@ -17,5 +18,5 @@ const guardarDatos = async (req, res) => {
 module.exports = {
     obtenerDatos: obtenerDatos,
     pintarForm: pintarForm,
-    guardarDatos: guardarDatos,
+    guardarDatos: guardarDatos
 }
